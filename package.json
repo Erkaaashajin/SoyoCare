@@ -2,8 +2,9 @@
   "name": "soyocare",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "18.x"
+
+    "engines": {
+      "node": "24.x"
   },
   "scripts": {
     "dev": "next dev",
@@ -16,7 +17,7 @@
     "geist": "^1.5.1",
     "lucide-react": "^0.555.0",
     "motion": "^12.23.26",
-"next": "14.2.35",
+    "next": "14.2.35",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwind-merge": "^3.4.0"
