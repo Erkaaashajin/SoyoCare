@@ -37,13 +37,9 @@ export default function Home() {
 
           <ul className="flex items-center space-x-10 text-xl font-bold uppercase">
             {/* HOME → Scroll to Contact */}
-            <li className="hover:text-blue-300 cursor-pointer">Home</li>
-
-            <Link href="/Games">
-              {" "}
-              <li className="hover:text-blue-300 cursor-pointer">Games</li>{" "}
+            <Link href="/">
+              <li className="hover:text-blue-300 cursor-pointer">Home</li>
             </Link>
-
             <Link href="/setgelzui">
               <li className="hover:text-blue-300 cursor-pointer">PSYCHOLOGY</li>
             </Link>

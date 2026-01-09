@@ -36,10 +36,7 @@ export default function Setgelzui() {
           <Link href={"/"}>
             <li className="hover:text-blue-300 cursor-pointer">Home</li>
           </Link>
-          <Link href="/Games">
-            {" "}
-            <li className="hover:text-blue-300 cursor-pointer">Games</li>{" "}
-          </Link>
+
 
           <Link href="/setgelzui">
             <li className="hover:text-blue-300 cursor-pointer">PSYCHOLOGY</li>
