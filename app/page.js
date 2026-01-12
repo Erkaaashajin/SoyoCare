@@ -66,7 +66,7 @@ export default function Home() {
               >
                 <img
                   src={` ${
-                    theme ? "/image/sun.png" : "/image/actualmoon.png"
+                    theme ? "/image/actualsun.png" : "/image/realmoon.png"
                   } `}
                   className={`w-[50px] h-[50px] rounded-[10px]
                     ${
@@ -81,7 +81,7 @@ export default function Home() {
         {/* HERO SECTION */}
         <div className="flex flex-col text-left mt-7 ml-[70px]">
           <BlurText
-            text="We teach what do in"
+            text="Learn Life-Saving Skills"
             delay={150}
             animateBy="words"
             direction="top"
@@ -89,7 +89,7 @@ export default function Home() {
             className="text-6xl font-extrabold leading-tight max-w-3x"
           />
           <BlurText
-            text="medical emergencies"
+            text="Master medical emergencies"
             delay={180}
             animateBy="words"
             direction="top"
@@ -97,7 +97,7 @@ export default function Home() {
             className="text-6xl text-blue-700 font-extrabold leading-tight max-w-3x"
           />
           <BlurText
-            text="and give you a step by step "
+            text="with step-by-step guides"
             delay={150}
             animateBy="words"
             direction="top"
@@ -105,7 +105,7 @@ export default function Home() {
             className="text-6xl font-extrabold leading-tight max-w-3x"
           />
           <BlurText
-            text="guide"
+            text="when seconds matter most"
             delay={180}
             animateBy="words"
             direction="top"
@@ -113,14 +113,13 @@ export default function Home() {
             className="text-6xl font-extrabold leading-tight max-w-3x"
           />
           <BlurText
-            text="The place to be educated just in case."
+            text="Be prepared. Save lives."
             delay={100}
             animateBy="words"
             direction="top"
             onAnimationComplete={handleAnimationComplete}
             className="text-lg mt-6 max-w-xl text-grey-700 underline underline-offset-3 opacity-80"
           />
-
           <div className="mt-10 flex gap-4">
             <Link
               href="/HomePage"
@@ -130,7 +129,7 @@ export default function Home() {
                   : "bg-radial-[at_50%_75%] from-blue-600 via-blue-700 via-blue-800 to-blue-900 border border-white/70 hover:bg-white hover:text-blue-900"
               }`}
             >
-              EMERGENCIES WE DOCUMENTED
+                START LEARNING NOW
             </Link>
 
             <button

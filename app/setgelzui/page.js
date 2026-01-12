@@ -33,11 +33,10 @@ export default function Setgelzui() {
         </div>
 
         <ul className="flex items-center space-x-10 text-xl font-bold uppercase">
-          <Link href={"/"}>
+          {/* HOME → Scroll to Contact */}
+          <Link href="/">
             <li className="hover:text-blue-300 cursor-pointer">Home</li>
           </Link>
-
-
           <Link href="/setgelzui">
             <li className="hover:text-blue-300 cursor-pointer">PSYCHOLOGY</li>
           </Link>
@@ -63,9 +62,13 @@ export default function Setgelzui() {
               }}
             >
               <img
-                src={` ${theme ? "/image/sun.png" : "/image/moon.png"} `}
+                src={` ${
+                  theme ? "/image/actualsun.png" : "/image/realmoon.png"
+                } `}
                 className={`w-[50px] h-[50px] rounded-[10px]
-                    ${theme ? "bg-gray-800" : "bg-white"}`}
+                    ${
+                      theme ? "" : "bg-gradient-br from-teal-300 to-[#1e3cfa]"
+                    }`}
               />
             </button>
           </li>

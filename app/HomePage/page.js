@@ -7,7 +7,13 @@ export default function HomePage() {
   const { theme, setTheme, isEnglish, setIsEnglish } = useTheme();
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-teal-300 to-[#1e3cfa] text-white">
+    <main
+      className={`transition ${
+        theme
+          ? "bg-gradient-to-br from-black via-gray-700 via-gray-300 to-gray-100 text-white min-h-screen"
+          : "bg-gradient-to-br from-teal-300 to-[#1e3cfa] text-white min-h-screen"
+      }`}
+    >
       <nav className="flex justify-between items-center px-10 ">
         <div className="flex items-center space-x-2">
           <Link href="/">
@@ -20,7 +26,8 @@ export default function HomePage() {
         </div>
 
         <ul className="flex items-center space-x-10 text-xl font-bold uppercase">
-          <Link href={"/"}>
+          {/* HOME → Scroll to Contact */}
+          <Link href="/">
             <li className="hover:text-blue-300 cursor-pointer">Home</li>
           </Link>
           <Link href="/setgelzui">
@@ -48,15 +55,18 @@ export default function HomePage() {
               }}
             >
               <img
-                src={` ${theme ? "/image/sun.png" : "/image/moon.png"} `}
+                src={` ${
+                  theme ? "/image/actualsun.png" : "/image/realmoon.png"
+                } `}
                 className={`w-[50px] h-[50px] rounded-[10px]
-                    ${theme ? "bg-gray-800" : "bg-white"}`}
+                    ${
+                      theme ? "" : "bg-gradient-br from-teal-300 to-[#1e3cfa]"
+                    }`}
               />
             </button>
           </li>
         </ul>
       </nav>
-
       <div className="p-8 relative -top-[40px] ">
         <div className="ml-[30px]">
           {" "}
